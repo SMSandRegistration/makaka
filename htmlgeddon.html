@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design and Development</title>
+    <style>
+        body {
+            font-family: 'Roboto', Arial, sans-serif;
+            min-height: 100vh;
+            background: #e87722;
+            background-image:
+                radial-gradient(ellipse at 10% 50%, rgba(220, 80, 20, 0.7) 0%, transparent 60%),
+                radial-gradient(ellipse at 30% 80%, rgba(230, 100, 30, 0.5) 0%, transparent 50%),
+                radial-gradient(ellipse at 80% 20%, rgba(240, 180, 50, 0.6) 0%, transparent 50%),
+                radial-gradient(ellipse at 90% 80%, rgba(245, 200, 60, 0.5) 0%, transparent 50%),
+                radial-gradient(ellipse at 50% 50%, rgba(235, 150, 40, 0.4) 0%, transparent 70%);
+            background-color: #e87722;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 40px 20px 30px;
+            box-sizing: border-box;
+        }
+        h1 {
+            color: #ffffff;
+            font-size: 48px;
+            font-weight: 900;
+            text-align: center;
+            margin-top: 20px;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+            line-height: 1.2;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr; 
+            gap: 20px;
+            max-width: 960px;
+            width: 100%;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 35px 30px 30px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .card-number {
+            font-size: 52px;
+            font-weight: 900;
+            color: #d4a017;
+            margin-bottom: 15px;
+            line-height: 1;
+        }
+        .card-text {
+            font-size: 14px;
+            font-style: italic;
+            color: #333333;
+            line-height: 1.7;
+            margin-bottom: 20px;
+            flex-grow: 1;
+        }
+        .card-link {
+            font-size: 13px;
+            font-weight: 700;
+            color: #333333;
+            text-decoration: none;
+            letter-spacing: 1.5px;
+            border-bottom: 2px solid #d4a017;
+            padding-bottom: 3px;
+        }
+        @media (min-width: 600px) {
+            .grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media (min-width: 900px) {
+            .grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Design and Development</h1>
+    <div class="grid">
+        <div class="card">
+            <div class="card-number">01</div>
+            <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="card-link">Learn More</a>
+        </div>
+        <div class="card">
+            <div class="card-number">02</div>
+            <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="card-link">Learn More</a>
+        </div>
+        <div class="card">
+            <div class="card-number">03</div>
+            <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="card-link">Learn More</a>
+        </div>
+        <div class="card">
+            <div class="card-number">04</div>
+            <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="card-link">Learn More</a>
+        </div>
+        <div class="card">
+            <div class="card-number">05</div>
+            <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="card-link">Learn More</a>
+        </div>
+        <div class="card">
+            <div class="card-number">06</div>
+            <p class="card-text">Sample text. Click to select the text box. Click again or double click to start editing the text. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+            <a href="#" class="card-link">Learn More</a>
+        </div>
+    </div>
+</body>
+</html>
